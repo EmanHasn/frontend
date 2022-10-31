@@ -1,0 +1,8 @@
+<div class="container">
+    <input type="text" name="" id="" class="btn btn-primaery w-100 m-2 text-left" placeholder="search by title" style="outline: none; border:none">
+    <div class="row" style="height: 120px !important;">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12" *ngFor="let post of posts">
+        <app-card [singleUnit]="post"></app-card>
+    </div>
+   </div>
+</div>

@@ -1,0 +1,54 @@
+<section class="h-100 bg-light">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="assets\tablet-login-concept-illustration_114360-7883.webp"
+                alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">registration form</h3>
+  
+                  <form #register = "ngForm" (ngSubmit)="registerUser(register)">
+                   
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1m" name="userName" ngModel #userName="ngModel" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example1m" >full name</label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1n1" class="form-control form-control-lg" name="email" ngModel #email="ngModel" />
+                        <label class="form-label" for="form3Example1n1" >email</label>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1n1" class="form-control form-control-lg" name="password" ngModel #password="ngModel"/>
+                        <label class="form-label" for="form3Example1n1" >password</label>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center pt-1">
+                      <button type="button" class="btn btn-warning btn-lg ms-2">Sign Up</button>
+                    </div>
+                  </form>
+                 </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </section>

@@ -1,0 +1,14 @@
+<div class="card my-2 p-3" >
+    <!-- <img [src]="img" class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title text-success text-bold font-weight-bold"> <span [ngClass]="'text-success'">{{singleUnit.id}}</span>{{singleUnit.title}}</h5>
+      <p class="card-text">{{singleUnit.content}}</p>
+      <ul class="list-unstyled"  *ngFor="let item of singleUnit.category">
+        category:
+        <li>{{item}}</li>
+      </ul>
+      <button class="btn btn-warning" routerLink="/posts/{{singleUnit._id}}">Read more</button>
+
+    </div>
+  </div>
+  
